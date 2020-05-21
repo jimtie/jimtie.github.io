@@ -19,7 +19,7 @@ body.active{overflow:hidden;z-index:-1}
 #experience-timeline ul{color:#74808a;font-size:0.9em;margin:0}
 .no-js #experience-timeline:before,.no-js #experience-timeline:after{content:none}
 @keyframes dropHeader{0%{transform:translateY(-100%)}100%{transform:translateY(0)}}
-header{position:fixed;top:0;left:0;right:0;text-align:center;z-index:100;animation-name:dropHeader;animation-iteration-count:1;animation-timing-function:ease;animation-duration:0.75s}
+header{position:fixed;top:0;left:0;right:0;text-align:center;z-index:100;animation-name:dropHeader;animation-iteration-count:1;animation-timing-function:ease;animation-duration:0.75s;font-size:20px}
 header ul{overflow:hidden;display:inline-block;background:#fff;text-align:center;padding:30px;margin:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px;transition:0.6s;}
 header li{display:inline-block}
 #logo{position:fixed;float:left;margin-left:50px;transition:0.6s;font-size:35px;font-weight:bold;padding:0;z-index:100;}
