@@ -85,13 +85,13 @@ footer{padding:50px 0}
 .education-block ul{padding:0 0 0 15px}
 #projects{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center}
 #projects h2{color:#374054;margin-bottom:50px}
-.project{position:relative;max-width:900px;margin:0 auto 30px auto;overflow:hidden;background:#fff;border-radius:4px}
-.project-image{float:left}
-.project-info{position:absolute;top:50%;transform:translateY(-50%);margin-left:300px;padding:15px}
-.project-info h3{font-size:1.5em;font-weight:300;color:#374054;margin:0 0 15px 0}
-.project-info p{color:#74808a;margin:0 0 15px 0;font-size:0.9em}
-.no-image .project-info{position:relative;margin:0;padding:30px 15px;transform:none}
-#more-projects{display:none}
+.UX h3 {margin-bottom: 10px;}
+.ID h3 {margin-top: 15px;margin-bottom: 10px;}
+.PG h3 {margin-top: 15px;margin-bottom: 10px;}
+.project {display:flex; justify-content:center; max-width: 1000px}
+.project-image{text-align:center; margin:0 15px 15px 15px;}
+.UX, .ID, .PG {margin: auto;}
+
 #skills{padding:50px 15px;text-align:center}
 #skills h2{color:#374054;margin-bottom:50px}
 #skills ul{display:block;margin:0 auto;padding:0;max-width:800px}
@@ -131,7 +131,7 @@ footer{padding:50px 0}
 #about{text-align:center}
 #about p{text-align:left}}
 @media only screen and (max-width: 768px){header{position:fixed;display:none;z-index:999;animation:none;bottom:0;height:100%}
-#mobile-menu-open,#mobile-menu-close{display:block}
+#mobile-menu-open,#mobile-menu-close{display:block;}
 #menu{height:100%;overflow-y:auto;box-shadow:none;border-radius:0;width:100%}
 #menu li{display:block;margin-bottom:10px}
 #lead-content h1{font-size:2em}
@@ -139,8 +139,8 @@ footer{padding:50px 0}
 #lead-content a{padding:10px 20px}
 #lead-down{display:none}
 .education-block h3,.education-block span{float:none}
-.project-image{display:none}
-.project-info{position:relative;margin:0;padding:30px 15px;top:auto;transform:none}
+.project-image{position:relative;margin:5px 0 20px 0;transform:none}
+
 footer{text-align:center}
 .social{text-align:center}}
 @media only screen and (max-width: 480px){#lead-content h1{font-size:1.5em}
