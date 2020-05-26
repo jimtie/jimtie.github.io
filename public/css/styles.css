@@ -148,9 +148,14 @@ footer{text-align:center}
 #lead-content h2{font-size:1em}
 #lead-content a{font-size:0.9em;padding:5px 10px}}
 
-
-
-
+.modal {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 
 
