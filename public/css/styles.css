@@ -89,8 +89,9 @@ footer{padding:50px 0}
 .ID h3 {margin-top: 15px;margin-bottom: 10px;}
 .PG h3 {margin-top: 15px;margin-bottom: 10px;}
 .project {display:flex; justify-content:center; max-width: 1000px}
-.project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: 100%;border:1px solid #dcd9d9;}
+.project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: 100%;}
 .UX, .ID, .PG {margin: auto;}
+.p-image {border:1px solid #dcd9d9;}
 
 #skills{padding:50px 15px;text-align:center}
 #skills h2{color:#374054;margin-bottom:50px}
