@@ -85,11 +85,12 @@ footer{padding:50px 0}
 .education-block ul{padding:0 0 0 15px}
 #projects{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center}
 #projects h2{color:#374054;margin-bottom:50px}
-.UX h3 {margin-bottom: 10px;}
+.UX h3 {margin-bottom: 10px;display: inline-block;}
 .ID h3 {margin-top: 15px;margin-bottom: 10px;}
 .PG h3 {margin-top: 15px;margin-bottom: 10px;}
 .project {display:flex; justify-content:center; max-width: 1000px}
-.project-image{text-align:center; margin:0 15px 15px 15px;}
+/*#ux-1, #ux-2, #ux-3 {display: inline-block;}*/
+.project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: auto;}
 .UX, .ID, .PG {margin: auto;}
 
 #skills{padding:50px 15px;text-align:center}
@@ -139,7 +140,7 @@ footer{padding:50px 0}
 #lead-content a{padding:10px 20px}
 #lead-down{display:none}
 .education-block h3,.education-block span{float:none}
-.project-image{margin:5px 0 20px 0;transform:none}
+.project-image{margin:5px 0 20px 0}
 
 footer{text-align:center}
 .social{text-align:center}}
