@@ -91,7 +91,7 @@ footer{padding:50px 0}
 .project {display:flex; justify-content:center; max-width: 1000px}
 .project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: 100%;}
 .UX, .ID, .PG {margin: auto;}
-.p-image {border:1px solid #dcd9d9;}
+.p-image {border:1px solid #dcd9d9;border-radius: 4px;}
 
 #skills{padding:50px 15px;text-align:center}
 #skills h2{color:#374054;margin-bottom:50px}
