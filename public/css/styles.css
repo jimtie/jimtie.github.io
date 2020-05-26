@@ -88,7 +88,7 @@ footer{padding:50px 0}
 .UX h3 {margin-bottom: 10px;display: inline-block;}
 .ID h3 {margin-top: 15px;margin-bottom: 10px;}
 .PG h3 {margin-top: 15px;margin-bottom: 10px;}
-.project {display:flex; justify-content:center; max-width: 1000px}
+.project {display:flex; justify-content:center; max-width: 1100px}
 .project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: 100%;}
 .UX, .ID, .PG {margin: auto;}
 .p-image {border:1px solid #dcd9d9;border-radius: 4px;}
