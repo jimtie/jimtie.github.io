@@ -145,8 +145,8 @@ footer{padding:50px 0}
 footer{text-align:center}
 .social{text-align:center}}
 @media only screen and (max-width: 480px){#lead-content h1{font-size:1.5em}
-#lead-content h2{font-size:1em}
-#lead-content a{font-size:0.9em;padding:5px 10px}
+#lead-content h2{font-size:0.8em}
+#lead-content a{font-size:0.8em;padding:5px 10px}
 #lead{width:auto;min-width:auto;max-width:auto;padding:20px 15px}}
 
 .modal {
