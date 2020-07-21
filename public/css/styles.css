@@ -64,9 +64,8 @@ footer{padding:50px 0}
 #about h2{color:#374054}#about p{color:#74808a;margin:0}
 #experience{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9}
 #experience h2{color:#374054}
-#experience-timeline{margin:30px auto 0 auto;position:relative;max-width:1000px}
-#experience-timeline:before{position:absolute;content:'';top:0;bottom:0;left:303px;right:auto;height:100%;width:3px;background:#3498db;z-index:0}
-#experience-timeline:after{position:absolute;content:'';width:3px;height:40px;background:#3498db;background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));top:100%;left:303px}
+#experience-timeline{margin:30px auto 0 auto;position:relative;max-width:1000px;text-align:left;}
+
 .vtimeline-content{margin-left:350px;background:#fff;border:1px solid #e6e6e6;padding:15px;border-radius:3px;text-align:left}
 .vtimeline-content h3{font-size:1.5em;font-weight:300;color:#374054;display:inline-block;margin:0}
 .vtimeline-content h4{font-size:1.2em;font-weight:300;color:#7e8890;margin:0 0 15px 0}
@@ -84,19 +83,23 @@ footer{padding:50px 0}
 .education-block p,.education-block ul{margin:0;color:#74808a;font-size:0.9em}
 .education-block ul{padding:0 0 0 15px}
 #projects{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center}
-#projects h2{color:#374054;margin-bottom:50px}
-.UX h3 {margin-bottom: 10px;display: inline-block;}
+#projects h2{color:#374054;margin-bottom:30px;margin-top:100px;}
+/*.UX h3 {margin-bottom: 10px;display: inline-block;}
 .ID h3 {margin-top: 15px;margin-bottom: 10px;}
 .PG h3 {margin-top: 15px;margin-bottom: 10px;}
 .project {display:flex; justify-content:center; max-width: 1100px}
 .project-image{flex:1;text-align:center; margin:0 15px 15px 15px; width: 100%; height: 100%;}
 .UX, .ID, .PG {margin: auto;}
-.p-image {border:1px solid #dcd9d9;border-radius: 4px;}
+.p-image {border:1px solid #dcd9d9;border-radius: 4px;}*/
+.project-image {margin-left:auto;margin-right:auto;margin-top:20px;width:100%;height:auto;}
 
-#skills{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9}
+#otherworks{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9;}
+#otherworks h2{color:#374054;margin-bottom:50px}
+
+#skills{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9; background: #f2f2f5;}
 #skills h2{color:#374054;margin-bottom:50px}
 #skills ul{display:block;margin:0 auto;padding:0;max-width:800px}
-#skills li{display:inline-block;margin:7px;padding:5px 10px;color:#374054;background:#e4e4ea;list-style:none;cursor:default;font-size:1.2em}
+#skills li{display:inline-block;margin:7px;padding:5px 10px;color:#374054;background:#e4e4eb;list-style:none;cursor:default;font-size:1.2em}
 #contact{padding:50px 15px;background:#f2f2f5;text-align:center;border-bottom:1px solid #dcd9d9;}
 #contact h2{margin:0 0 15px 0;color:#374054;font-weight:500}
 #contact-form{max-width:500px;margin:0 auto}
@@ -143,11 +146,16 @@ footer{padding:50px 0}
 .project-image{margin:5px 0 20px 0}
 
 footer{text-align:center}
+#container h2{color:#374054;}
 .social{text-align:center}}
 @media only screen and (max-width: 480px){#lead-content h1{font-size:1.5em}
 #lead-content h2{font-size:0.8em}
 #lead-content a{font-size:0.8em;padding:5px 10px}
 #lead{width:auto;min-width:auto;max-width:auto;padding:20px 15px}}
+
+#contact-contact{padding:150px 0 50px 0;background:#f2f2f5;text-align:center;border-bottom:1px solid #dcd9d9;}
+#contact-contact h2{margin:0 0 15px 0;color:#374054;font-weight:500}
+
 
 .modal {
     display: none;
@@ -161,6 +169,73 @@ footer{text-align:center}
 .embed-responsive-item {height: 100%}
 
 
+/*CAROUSEL*/
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+        margin-right: initial;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
 
 
 
